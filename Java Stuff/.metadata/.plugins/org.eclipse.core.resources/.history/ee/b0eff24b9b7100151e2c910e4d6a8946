@@ -1,0 +1,15 @@
+
+public class TestImmutableString {
+	public static void main(String args[]){
+		String titleOne = "Operation Flashpoint";
+		String titleTwo = "Operation Flashpoint";
+		String titleThree = "Cold War Assualt";
+		String titleFour = new String("Operation Flashpoint");
+		
+		System.out.println(titleOne.equals(titleTwo));
+		
+		System.out.println(titleOne == titleTwo);
+		
+		System.out.println(titleOne == titleFour);
+	}
+}

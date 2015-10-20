@@ -1,0 +1,10 @@
+
+public class TestImmutableString {
+	public static void main(String args[]){
+		String firstName = "le";
+		String lastName = "MayMayMan";
+		String fullName=firstName + " " + lastName;
+		
+		System.out.println(fullName);
+	}
+}
