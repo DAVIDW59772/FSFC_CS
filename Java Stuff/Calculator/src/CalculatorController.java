@@ -13,9 +13,9 @@ public class CalculatorController {
 		davidsCalculator.setNumberOne(nOne);
 		davidsCalculator.setNumberOne(nTwo);
 		
-		Scanner scan = new Scanner(System.in);
-		scan.nextLine();
-		
+		Scanner firstNum = new Scanner(System.in);
+		firstNum.nextLine();
+		System.out.print("What is your first number");
 		
 		System.out.println("Adding " + davidsCalculator.add());
 		System.out.println("Subtract " + davidsCalculator.subtract());
