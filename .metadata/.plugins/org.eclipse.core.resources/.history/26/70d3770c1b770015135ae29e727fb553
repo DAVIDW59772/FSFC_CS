@@ -22,18 +22,14 @@ public class CalculatorController {
 		davidsCalculator.setNumberOne(nOne);
 		davidsCalculator.setNumberOne(nTwo);
 		
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 		System.out.print("What is your first number");
-		String firstNum=sc.nextLine();
-		
-		Scanner sc1 = new Scanner(System.in);
-		System.out.print("What is your second number");
-		String secondNum=sc1.nextLine();
+		//String firstNum=sc.nextLine();
 			
 		System.out.println("Adding " + davidsCalculator.add());
 		System.out.println("Subtract " + davidsCalculator.subtract());
-		System.out.println("Multiplying " + davidsCalculator.multiply());
-		System.out.println("Dividing " + davidsCalculator.divide());
+		System.out.println("Adding " + davidsCalculator.divide());
+		System.out.println("Adding " + davidsCalculator.multiply());
 			
 	}
 
