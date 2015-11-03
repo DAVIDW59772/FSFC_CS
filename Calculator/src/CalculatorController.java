@@ -12,28 +12,25 @@ import java.util.*;
 public class CalculatorController {
 
 	public static void main(String[] args) {
-		float nOne, nTwo;
 			
 		Calculator davidsCalculator = new Calculator();
-			
-		nOne = Float.parseFloat(args[0]);
-		nTwo = Float.parseFloat(args[1]);
-		
-		davidsCalculator.setNumberOne(nOne);
-		davidsCalculator.setNumberOne(nTwo);
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("What is your first number");
-		String firstNum=sc.nextLine();
+		Float firstNum=sc.nextFloat();
+		
 		
 		Scanner sc1 = new Scanner(System.in);
 		System.out.print("What is your second number");
-		String secondNum=sc1.nextLine();
+		Float secondNum=sc1.nextFloat();
+		
+		davidsCalculator.setNumberOne(firstNum);
+		davidsCalculator.setNumberOne(secondNum);
 			
-		System.out.println("Adding " + davidsCalculator.add());
-		System.out.println("Subtract " + davidsCalculator.subtract());
-		System.out.println("Multiplying " + davidsCalculator.multiply());
-		System.out.println("Dividing " + davidsCalculator.divide());
+		System.out.println("Adding " + firstNum + " and " + secondNum + " gives you " + davidsCalculator.add());
+		System.out.println("Subtract " + firstNum + " and " + secondNum + " gives you " + davidsCalculator.subtract());
+		System.out.println("Multiplying " + firstNum + " and " + secondNum + " gives you " + davidsCalculator.multiply());
+		System.out.println("Dividing " + firstNum + " and " + secondNum + " gives you " + davidsCalculator.divide());
 			
 	}
 

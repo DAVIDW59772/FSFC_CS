@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+
+/**
+ * @author CompUser
+ *
+ */
+public class test_ye {
+	private int x;
+	private int X;{
+	
+	x = 12;
+	X = 13;
+	
+	System.out.println(x);
+	System.out.println(X);
+	
+}}
