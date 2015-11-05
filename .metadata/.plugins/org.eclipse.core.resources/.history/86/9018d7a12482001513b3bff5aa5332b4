@@ -9,7 +9,7 @@
 public class LoopTesting {
 
 
-	private static void main (String[] args){
+	private static void main (String[] args) {
 	
 		int x = 2;
 		
