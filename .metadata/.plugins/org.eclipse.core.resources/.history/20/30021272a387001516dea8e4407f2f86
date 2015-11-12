@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+
+/**
+ * @author CompUser
+ *
+ */
+
+import java.util.*;
+
+public class OddOrEven {
+
+	public static void main(String[] args) {
+		
+		oddOrEven();
+		
+	}
+	
+	static void oddOrEven() {
+		
+		String number;
+		
+		Scanner inputtedNum = new Scanner(System.in);
+		try {
+			System.out.println("What number would you like to test?");
+			number = inputtedNum.nextLine();
+			if number.equals("2") {
+				System.out.println("The number is not prime");
+			}
+		} finally {
+			inputtedNum.close();
+		}
+		
+
+		
+		String lastNum = number.substring(1);
+		System.out.println(lastNum);
+		
+		
+
+		} else if(lastNum.equals("0") || ("2") || ("4")) {
+			System.out.println("The number is prime");
+		} else {
+			System.out.println("The number is not prime");
+		}
+	
+
+	}
+	
+}
