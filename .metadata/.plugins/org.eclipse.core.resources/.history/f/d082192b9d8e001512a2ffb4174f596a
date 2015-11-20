@@ -1,0 +1,47 @@
+package Arrays;
+
+import java.util.*;
+
+public class SortingTypes {
+
+	public static void main(String[] args) {
+	
+		bubbleSort();
+		
+	}	
+		
+	static void bubbleSort() {
+		
+	int temp = 0;
+	int passes = 0;
+	int location = 0;
+	int size = 0;
+	int filled = 0;
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.println("How many numbers in the array would you like");
+	size = sc.nextInt();
+	
+	int [] listOne = new int[size]; 
+	
+	for(filled = 0; filled > size; filled++) {
+		listOne[filled] = (int)Math.random()*100;
+	}
+	
+	for(passes = 0; passes < listOne.length-1; passes++) {
+		for(location = 0; location < listOne.length-1; location++) {
+			if(listOne[location] > listOne[location+1]) {
+				temp = listOne[location];
+				listOne[location] = listOne[location+1];
+				listOne[location+1] = temp;
+			}
+			
+		}
+	
+	}
+		
+	System.out.println(Arrays.toString(listOne));
+	
+	}
+}
+

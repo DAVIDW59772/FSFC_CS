@@ -1,0 +1,85 @@
+/**
+ * 
+ */
+package Arrays;
+
+import java.util.Scanner;
+
+/**
+ * @author CompUser
+ *
+ */
+public class ArraysTester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		arrayTestOne();
+		arrayTestTwo();
+		
+	}	
+	
+	static void arrayTestOne() {
+		double[] myListOne = {3.5, 5.99, 3.8, 8.69, 23.4};
+		for (int i = 0; i < myListOne.length; i++) {
+			System.out.println(myListOne[i]);
+		}
+		
+		double total = 0;
+		
+		for(int i = 0; i < myListOne.length; i++) {
+			total += myListOne[i];
+		}
+		
+		System.out.println("Total of array is " + total + ".");
+		
+		double max = myListOne[0];
+		for(int i = 1; i < myListOne.length; i++) {
+			if(myListOne[i] > max) {
+				max = myListOne[i];
+
+
+		System.out.println("Larget value is " + max + ".");
+			}
+			
+
+		}
+	}
+	
+	static void arrayTestTwo() {
+		
+		int r;
+		int c;
+		
+		Scanner rowsInput= new Scanner(System.in);
+		try {
+			System.out.println("How many rows do you want?");
+			r = rowsInput.nextInt();
+		} finally {
+			rowsInput.close();
+		}
+		Scanner columnInput= new Scanner(System.in);
+		try {
+			System.out.println("What number would you like to test for being prime?");
+			c = columnInput.nextInt();
+		} finally {
+			columnInput.close();
+		}
+		int[][] bigArray = new int[r][c];
+		Scanner numInput = new Scanner(System.in);
+		for(int rows = 0; rows < r; rows++) {
+			for(int columns = 0; columns < c; columns++) {
+				try {
+					System.out.println("What number would you like to to input into array location {" + r +"][" + c + "");
+					bigArray[r][c] = numInput.nextInt();
+				} finally {
+					numInput.close();
+				}
+			}
+		}
+		
+	}
+	
+}
